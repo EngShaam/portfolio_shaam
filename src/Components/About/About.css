@@ -1,0 +1,128 @@
+/* About.css - Premium Dark Theme */
+
+:root {
+    --bg-primary: #0a0e17;
+    --accent: #60a5fa;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --gold: #d4af37;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.about-section {
+    min-height: 100vh;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 6rem 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.profile-image {
+    flex: 1;
+    max-width: 300px;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    border: 3px solid var(--accent);
+}
+
+.about-content {
+    flex: 2;
+}
+
+h1,
+h2 {
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px rgba(96, 165, 250, 0.3);
+}
+
+.bio {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    color: var(--text-secondary);
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+ul li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.skills-grid span {
+    background: rgba(96, 165, 250, 0.1);
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.skills-grid span:hover {
+    background: var(--accent);
+    color: var(--bg-primary);
+}
+
+.cta {
+    text-align: center;
+}
+
+.btn {
+    padding: 1rem 2.5rem;
+    background: var(--accent);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        max-width: 200px;
+        margin-bottom: 2rem;
+    }
+}

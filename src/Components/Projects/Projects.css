@@ -1,0 +1,169 @@
+/* Projects.css - Premium Dark Cyber Theme (مع تحسينات إضافية لتنسيق الصور داخل الكروت) */
+
+:root {
+    --bg-primary: #0a0e17;
+    --accent: #60a5fa;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --gold: #d4af37;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.projects-section {
+    min-height: 100vh;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 6rem 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px rgba(96, 165, 250, 0.3);
+}
+
+.intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    color: var(--text-secondary);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* يضمن توزيعًا متساويًا */
+    gap: 3rem;
+    /* زيادة المسافة بين الكروت لتنسيق أفضل */
+    justify-items: center;
+    /* محاذاة الكروت في الوسط */
+}
+
+.project-card {
+    background: rgba(17, 24, 39, 0.8);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    max-width: 350px;
+    /* حد أقصى لعرض الكارت للتوحيد */
+    width: 100%;
+    /* يجعلها تأخذ العرض الكامل داخل الـ grid cell */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* توزيع المحتوى بشكل متساوٍ داخل الكارت */
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    height: 250px;
+    /* زيادة الارتفاع لتناسب الصور بشكل أفضل (يمكنك تعديله حسب الصورة) */
+    overflow: hidden;
+    /* يخفي أي تجاوز */
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    /* يملأ الارتفاع بالكامل */
+    object-fit: contain;
+    /* يحافظ على نسبة الصورة الكاملة دون قص (بدل cover إذا كانت الصورة تحتاج عرض كامل) */
+    box-shadow: 0 5px 20px rgba(96, 165, 250, 0.2);
+}
+
+h2 {
+    color: var(--gold);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    /* حجم موحد للعناوين */
+    text-align: center;
+    /* محاذاة في الوسط */
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    /* يسمح للوصف بالتمدد لتوحيد ارتفاع الكروت */
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    /* مسافة أصغر للعلامات */
+    margin-bottom: 2rem;
+    justify-content: center;
+    /* محاذاة في الوسط */
+}
+
+.tech-stack span {
+    background: rgba(96, 165, 250, 0.15);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--accent);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(90deg, var(--accent), var(--gold));
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    align-self: center;
+    /* محاذاة الزر في الوسط */
+    margin-top: auto;
+    /* يدفع الزر إلى الأسفل لتوحيد الموقع */
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(96, 165, 250, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        /* كروت واحدة في كل سطر على الموبايل */
+        gap: 2rem;
+        /* تقليل المسافة للشاشات الصغيرة */
+    }
+
+    .project-card {
+        max-width: none;
+        /* إزالة الحد الأقصى على الموبايل */
+        padding: 1.5rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .project-image {
+        height: 200px;
+        /* تقليل الارتفاع قليلاً للموبايل لتناسب أفضل */
+    }
+}
