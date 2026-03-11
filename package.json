@@ -1,5 +1,5 @@
 {
-  "homepage": "https://engshaam.github.io/portfolio",
+  "homepage": "https://github.com/EngShaam/portfolio_shaam.git",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -14,12 +14,12 @@
     "react-router-dom": "^7.13.1",
     "react-scripts": "5.0.1"
   },
-"scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
