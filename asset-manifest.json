@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio_shaam/static/css/main.767a3ccd.css",
-    "main.js": "/portfolio_shaam/static/js/main.55caea29.js",
+    "main.js": "/portfolio_shaam/static/js/main.5ad090f3.js",
     "static/media/pro2.png": "/portfolio_shaam/static/media/pro2.c4033d839b571655fd6e.png",
     "static/media/pro1.png": "/portfolio_shaam/static/media/pro1.4cfcdd6c9f1c0b071856.png",
     "index.html": "/portfolio_shaam/index.html",
     "main.767a3ccd.css.map": "/portfolio_shaam/static/css/main.767a3ccd.css.map",
-    "main.55caea29.js.map": "/portfolio_shaam/static/js/main.55caea29.js.map"
+    "main.5ad090f3.js.map": "/portfolio_shaam/static/js/main.5ad090f3.js.map"
   },
   "entrypoints": [
     "static/css/main.767a3ccd.css",
-    "static/js/main.55caea29.js"
+    "static/js/main.5ad090f3.js"
   ]
 }
